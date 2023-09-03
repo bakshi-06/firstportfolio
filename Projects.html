@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakshi Projects</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(17, 2, 72);
+            color: white;
+            font-family:'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(28, 8, 103);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;           
+        }
+        nav ul li a:hover{
+            color: rgb(91, 91, 205);
+            font-size: 1.1rem ;           
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: -25px 84px 60px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+         .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+            padding: 100px;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .secondSection .box{
+            background: white;
+            width: 80vm;
+            height: 2px;
+            margin: 100px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background: white;
+            margin: 0 140px;
+        }
+        .image-top{
+            width: 50px;
+            position: relative;
+            top: -52px;
+            left: -15px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 50px;
+            width: 150px;
+            color:rgb(233, 113, 233);
+        }
+        .verticle-desc{ 
+            position: relative;
+            top: 70px; 
+            font-size: 0.5rem;
+            width: 100px;          
+        }
+        @media screen and (max-width: 1300px) {
+            .box{
+                flex-direction: column;
+            }
+            .secondSection .vertical{
+                height: unset;
+            }
+            .secondSection .box{
+                width: 50vw;
+            }
+            .vertical-title, .verticle-desc{
+                left: 45px;
+            }
+            .footer{
+                display: none;
+            }
+            .firstSection{
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            nav{
+                flex-direction: column;
+            }
+            .leftSection{
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;               
+            }
+            .rightSection{
+                width: 721px !important;
+                display: flex;
+                justify-content: center;     
+            }
+            .rightSection img{
+                width:45vw;
+                margin-bottom: 73px;
+            }
+            .secondSection{
+                max-width: 80nw;
+                margin:auto;
+                height:80vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            body{
+                min-width: fit-content;
+            }          
+        }    
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Bakshi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">projects</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+        </nav>
+    </header>
+    <main>
+        <section class="secondSection">
+            <span class="text-gray">What I have Done so far</span>
+            <h1>Bakshi's Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Project - 01
+                    </div>
+                    <div class="verticle-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem saepe iste officiis repudiandae amet, sunt culpa, dolor nobis impedit asperiores molestias perferendis aperiam.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Project - 02
+                    </div>
+                    <div class="verticle-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem saepe iste officiis repudiandae amet, sunt culpa, dolor nobis impedit asperiores molestias perferendis aperiam.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Project - 03
+                    </div>
+                    <div class="verticle-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem saepe iste officiis repudiandae amet, sunt culpa, dolor nobis impedit asperiores molestias perferendis aperiam.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        Project - 04
+                    </div>
+                    <div class="verticle-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem saepe iste officiis repudiandae amet, sunt culpa, dolor nobis impedit asperiores molestias perferendis aperiam.
+                    </div>
+                </div>
+            </div>            
+        </section>      
+    </main>
+</body>
+</html>

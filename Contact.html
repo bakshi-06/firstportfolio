@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COntact Details of Bakshi</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(17, 2, 72);
+            color: white;
+            font-family:'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(28, 8, 103);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;           
+        }
+        nav ul li a:hover{
+            color: rgb(91, 91, 205);
+            font-size: 1.1rem ;           
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        main .details{
+            padding: 100px;
+        }
+        .buttons{
+            padding: 50px 0;
+            padding: 100px;
+        }
+        .btn{
+            padding: 12px;
+            background-color: rgb(76, 76, 188);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+        }
+        @media screen and (max-width: 1300px) {
+            .box{
+                flex-direction: column;
+            }
+            .secondSection .vertical{
+                height: unset;
+            }
+            .secondSection .box{
+                width: 50vw;
+            }
+            .vertical-title, .verticle-desc{
+                left: 45px;
+            }
+            .footer{
+                display: none;
+            }
+            .firstSection{
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            nav{
+                flex-direction: column;
+            }
+            .leftSection{
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;               
+            }
+            .rightSection{
+                width: 721px !important;
+                display: flex;
+                justify-content: center;     
+            }
+            .rightSection img{
+                width:45vw;
+                margin-bottom: 73px;
+            }
+            .secondSection{
+                max-width: 80nw;
+                margin:auto;
+                height:80vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            body{
+                min-width: fit-content;
+            }
+            cursor: pointer;
+        }          
+        
+
+    </style>
+</head>
+<body>  
+    <header>
+        <nav>
+            <div class="left">Bakshi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">projects</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="details">Contact Details of Bakshi</div>
+        <br>
+        <div class="buttons">
+            <a href="index.html">
+                <button class="btn" >Home</button>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
